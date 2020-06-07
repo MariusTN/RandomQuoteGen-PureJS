@@ -1,64 +1,118 @@
-body{
-	font-family: 'Roboto', sans-serif;
-	color: #000;
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-#container{
-	width:800px;
-	margin:50px auto;
-	padding: 20px;
-	width:50%;
-}
-#container h2{
-	text-align:center;
-	color:#045;
+*::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-#quoteContainer{
-	width:75%;
-	background: #fff;
-	padding:10px;
-	margin:30px auto;
-	text-align: center;
-  height:70px;
-}
-#buttonContainer{
-	width: 100%;
-	text-align: center;
-}
-#quoteButton{
-	width:200px;
-	margin-top: 10px;
-	border:2px solid #46b8da;
-	color:#045;
-	font-family: inherit;
-	font-weight: bold;
-	padding:5px;
-	text-decoration: none;
-	text-align: center;
+body {
+  background-color: #eeeeee;
+  margin: auto;
 }
 
-#quoteButton:hover{
-	cursor:pointer;
-	background:#09c;
-	color: #fff;	
-}
-#quoteButton:active{
-	cursor: pointer;
-}
-#quoteButton{
-	display: inline-block;
-}
-#quoteAuthor{
-	font-style: italic;
-	font-weight: 600;
-	text-align: center;
+h2 {
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 36px;
+  margin: 0 0 24px;
+  text-align: center;
 }
 
-
-/*MEDIA QUERIES*/
-@media screen and(max-width:760px){
-	#quoteButton,#addNew{
-		display: block;
-	}
+.button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 40px;
+  width: 150px;
+  border: 2px solid #BFC0C0;
+  margin: 20px 20px 20px 20px;
+  color: #BFC0C0;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: .8em;
+  letter-spacing: 1.5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
 }
+
+#button-3 {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#button-3 a {
+  position: relative;
+  -webkit-transition: all .45s ease-Out;
+  transition: all .45s ease-Out;
+}
+
+#circle {
+  width: 0%;
+  height: 0%;
+  opacity: 0;
+  line-height: 40px;
+  border-radius: 50%;
+  background: #BFC0C0;
+  position: absolute;
+  -webkit-transition: all .5s ease-Out;
+  transition: all .5s ease-Out;
+  top: 20px;
+  left: 70px;
+}
+
+#button-3:hover #circle {
+  width: 200%;
+  height: 500%;
+  opacity: 1;
+  top: -70px;
+  left: -70px;
+}
+
+#button-3:hover a {
+  color: #2D3142;
+}
+
+.card {
+  font-family: 'Raleway', sans-serif;
+  padding: 15px 30px 15px 30px;
+  margin: 40px auto;
+  max-width: 500px;
+  max-height: 300px;
+  text-align: center;
+  color: #eeeeee;
+  background-color: #393e46;
+  border-radius: 1rem;
+}
+
+p {
+  font-family: 'Segoe UI';
+  font-weight: 400;
+  font-size: 20px;
+}
+
+a {
+  color: #BFC0C0;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+@media screen and (min-width: 1000px) {
+  h1 {
+    font-size: 2.2em;
+  }
+  #container {
+    width: 50%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
